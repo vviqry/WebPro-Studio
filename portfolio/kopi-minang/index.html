@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Minang | Coffee Shop Autentik di Sumatra Barat</title>
+    <meta name="description" content="Kopi Minang - Coffee shop dengan biji kopi pilihan dari pegunungan Sumatra Barat. Nikmati kopi autentik dengan suasana cozy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <span class="logo-icon">☕</span>
+                <span>Kopi<span class="accent">Minang</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#story">Cerita</a></li>
+                <li><a href="#location">Lokasi</a></li>
+            </ul>
+            <a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Minang!" class="btn btn-primary" target="_blank">
+                Pesan Online
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="hero-tagline">Craft Coffee & Cozy Vibes</span>
+                <h1>Kopi Autentik dari<br><span class="accent">Ranah Minang</span></h1>
+                <p>Nikmati pengalaman menyeruput kopi terbaik dari pegunungan Sumatra Barat. Dipanggang dengan cinta, disajikan dengan keramahan.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary btn-lg">Lihat Menu</a>
+                    <a href="#location" class="btn btn-outline btn-lg">Kunjungi Kami</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section">
+            <div class="container">
+                <div class="featured-grid">
+                    <div class="featured-card">
+                        <span class="featured-icon">🌱</span>
+                        <h3>100% Arabica</h3>
+                        <p>Biji kopi Arabica pilihan dari dataran tinggi Sumbar</p>
+                    </div>
+                    <div class="featured-card">
+                        <span class="featured-icon">🔥</span>
+                        <h3>Fresh Roasted</h3>
+                        <p>Dipanggang fresh setiap minggu untuk rasa optimal</p>
+                    </div>
+                    <div class="featured-card">
+                        <span class="featured-icon">❤️</span>
+                        <h3>Made with Love</h3>
+                        <p>Setiap cup dibuat dengan penuh cinta oleh barista</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Our Menu</span>
+                    <h2>Minuman <span class="accent">Signature</span></h2>
+                    <p>Racikan spesial dari barista berpengalaman kami</p>
+                </div>
+
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-category="coffee">Kopi</button>
+                    <button class="menu-tab" data-category="non-coffee">Non-Kopi</button>
+                    <button class="menu-tab" data-category="snack">Snack</button>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Coffee Items -->
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Espresso</h3>
+                                <span class="menu-price">Rp 18K</span>
+                            </div>
+                            <p>Single shot espresso dari biji Arabica Sumbar</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Kopi Susu Minang</h3>
+                                <span class="menu-price">Rp 22K</span>
+                            </div>
+                            <p>Signature drink! Espresso, susu segar, gula aren</p>
+                            <span class="menu-badge">Best Seller</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Cappuccino</h3>
+                                <span class="menu-price">Rp 25K</span>
+                            </div>
+                            <p>Espresso dengan steamed milk dan foam lembut</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>V60 Manual Brew</h3>
+                                <span class="menu-price">Rp 28K</span>
+                            </div>
+                            <p>Pour over untuk penikmat kopi sejati</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Affogato</h3>
+                                <span class="menu-price">Rp 30K</span>
+                            </div>
+                            <p>Vanilla ice cream disiram espresso panas</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Es Kopi Sanger</h3>
+                                <span class="menu-price">Rp 20K</span>
+                            </div>
+                            <p>Kopi susu khas dengan sentuhan jahe</p>
+                        </div>
+                    </div>
+
+                    <!-- Non-Coffee Items -->
+                    <div class="menu-item" data-category="non-coffee" style="display: none;">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Matcha Latte</h3>
+                                <span class="menu-price">Rp 25K</span>
+                            </div>
+                            <p>Premium matcha dengan susu segar</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="non-coffee" style="display: none;">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Chocolate</h3>
+                                <span class="menu-price">Rp 22K</span>
+                            </div>
+                            <p>Cokelat premium yang creamy dan rich</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="non-coffee" style="display: none;">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Teh Tarik</h3>
+                                <span class="menu-price">Rp 18K</span>
+                            </div>
+                            <p>Teh susu kental manis ala kopitiam</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="non-coffee" style="display: none;">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Fresh Orange</h3>
+                                <span class="menu-price">Rp 20K</span>
+                            </div>
+                            <p>Jus jeruk segar diperas langsung</p>
+                        </div>
+                    </div>
+
+                    <!-- Snack Items -->
+                    <div class="menu-item" data-category="snack" style="display: none;">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Roti Bakar Cokelat</h3>
+                                <span class="menu-price">Rp 18K</span>
+                            </div>
+                            <p>Roti panggang dengan cokelat lumer</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="snack" style="display: none;">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Pisang Goreng Keju</h3>
+                                <span class="menu-price">Rp 15K</span>
+                            </div>
+                            <p>Pisang goreng crispy dengan taburan keju</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="snack" style="display: none;">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Croissant</h3>
+                                <span class="menu-price">Rp 25K</span>
+                            </div>
+                            <p>Butter croissant fresh from oven</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-cta">
+                    <p>Lihat menu lengkap atau pesan langsung</p>
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20dari%20Kopi%20Minang" class="btn btn-primary" target="_blank">
+                        <span>💬</span> Pesan via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section" id="story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-image">
+                        <div class="story-placeholder">
+                            <span>☕</span>
+                            <p>Coffee Journey</p>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <span class="section-subtitle">Our Story</span>
+                        <h2>Dari Kebun ke <span class="accent">Cangkir Anda</span></h2>
+                        <p>Kopi Minang lahir dari kecintaan kami terhadap kopi lokal Sumatra Barat. Kami bekerja langsung dengan petani di dataran tinggi Solok dan Tanah Datar untuk mendapatkan biji kopi Arabica terbaik.</p>
+                        <p>Setiap biji kopi dipanggang dengan hati-hati untuk menghasilkan cita rasa yang kaya dan aroma yang menggugah selera. Inilah kopi yang membuat Anda jatuh cinta.</p>
+                        
+                        <div class="story-stats">
+                            <div class="story-stat">
+                                <span class="stat-number">2019</span>
+                                <span class="stat-label">Didirikan</span>
+                            </div>
+                            <div class="story-stat">
+                                <span class="stat-number">5K+</span>
+                                <span class="stat-label">Cup Tersaji</span>
+                            </div>
+                            <div class="story-stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Lokal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Gallery</span>
+                    <h2>Suasana <span class="accent">Kopi Minang</span></h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder"><span>☕</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder"><span>🥐</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder"><span>📖</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder"><span>🪴</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section" id="location">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Visit Us</span>
+                    <h2>Temukan <span class="accent">Kami</span></h2>
+                </div>
+
+                <div class="location-grid">
+                    <div class="location-info">
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <h4>Alamat</h4>
+                                <p>Jl. Pemuda No. 88<br>Padang, Sumatra Barat</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🕐</span>
+                            <div>
+                                <h4>Jam Buka</h4>
+                                <p>Setiap Hari<br>08:00 - 22:00 WIB</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📱</span>
+                            <div>
+                                <h4>Kontak</h4>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20reservasi%20tempat" class="btn btn-primary btn-full" target="_blank">
+                            Reservasi Tempat
+                        </a>
+                    </div>
+                    <div class="location-map">
+                        <div class="map-placeholder">
+                            <span>🗺️</span>
+                            <p>Jl. Pemuda No. 88, Padang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Butuh Kopi untuk Meeting?</h2>
+                <p>Kami menyediakan layanan catering kopi untuk acara kantor, workshop, dan gathering</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20tanya%20tentang%20catering%20kopi" class="btn btn-white btn-lg" target="_blank">
+                    <span>📞</span> Hubungi Kami
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">☕</span>
+                        <span>Kopi<span class="accent">Minang</span></span>
+                    </a>
+                    <p>Craft coffee & cozy vibes di jantung kota Padang.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#menu">Kopi</a></li>
+                        <li><a href="#menu">Non-Kopi</a></li>
+                        <li><a href="#menu">Snack</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#story">Cerita Kami</a></li>
+                        <li><a href="#location">Lokasi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <p>📍 Jl. Pemuda No. 88, Padang</p>
+                    <p>📱 +62 812-3456-7890</p>
+                    <p>🕐 08:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kopi Minang. All rights reserved.</p>
+                <p>Website by <a href="../../" target="_blank">WebPro Studio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Minang!" class="whatsapp-float" target="_blank">
+        <span>💬</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Padang Jaya | Masakan Padang Autentik di Sumatra Barat</title>
+    <meta name="description" content="Warung Padang Jaya menyajikan masakan Padang autentik dengan cita rasa tradisional. Rendang, Gulai, Sate Padang, dan berbagai menu lezat lainnya.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🍛</span>
+                <span>Warung Padang<span class="accent">Jaya</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#location">Lokasi</a></li>
+            </ul>
+            <a href="https://wa.me/6281234567890?text=Halo%20Warung%20Padang%20Jaya,%20saya%20ingin%20pesan%20makanan." class="btn btn-primary" target="_blank">
+                <span>📞</span> Pesan Sekarang
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="hero-badge">🌶️ Rasa Autentik Minangkabau</span>
+                <h1>Masakan Padang<br><span class="accent">Legendaris</span></h1>
+                <p>Nikmati kelezatan masakan Padang dengan resep turun-temurun. Rendang empuk, gulai gurih, dan sambalado pedas yang bikin nagih!</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary btn-lg">Lihat Menu</a>
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20reservasi%20meja." class="btn btn-outline btn-lg" target="_blank">Reservasi Meja</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Tahun Melayani</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Menu Tersedia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Pelanggan Puas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Menu Kami</span>
+                    <h2>Hidangan <span class="accent">Spesial</span></h2>
+                    <p>Berbagai pilihan masakan Padang autentik yang dimasak setiap hari dengan bahan segar</p>
+                </div>
+
+                <div class="menu-categories">
+                    <button class="category-btn active" data-category="all">Semua</button>
+                    <button class="category-btn" data-category="lauk">Lauk</button>
+                    <button class="category-btn" data-category="sayur">Sayur</button>
+                    <button class="category-btn" data-category="sambal">Sambal</button>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Menu Item 1 -->
+                    <div class="menu-card" data-category="lauk">
+                        <div class="menu-image">
+                            <span class="menu-emoji">🥩</span>
+                            <span class="menu-badge">Best Seller</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Rendang Daging</h3>
+                            <p>Daging sapi pilihan dimasak dengan santan dan rempah hingga empuk sempurna</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 25.000</span>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20pesan%20Rendang%20Daging" class="btn-order" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 2 -->
+                    <div class="menu-card" data-category="lauk">
+                        <div class="menu-image">
+                            <span class="menu-emoji">🍗</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Ayam Pop</h3>
+                            <p>Ayam kampung direbus dengan bumbu special, disajikan dengan sambal cabe hijau</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 20.000</span>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20pesan%20Ayam%20Pop" class="btn-order" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 3 -->
+                    <div class="menu-card" data-category="lauk">
+                        <div class="menu-image">
+                            <span class="menu-emoji">🐟</span>
+                            <span class="menu-badge">Rekomendasi</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Gulai Ikan Kakap</h3>
+                            <p>Ikan kakap segar dimasak dengan kuah gulai kuning khas Minang</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 30.000</span>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20pesan%20Gulai%20Ikan" class="btn-order" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 4 -->
+                    <div class="menu-card" data-category="sayur">
+                        <div class="menu-image">
+                            <span class="menu-emoji">🥬</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Sayur Nangka</h3>
+                            <p>Nangka muda dimasak dengan santan dan bumbu rempah pilihan</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 8.000</span>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20pesan%20Sayur%20Nangka" class="btn-order" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 5 -->
+                    <div class="menu-card" data-category="sayur">
+                        <div class="menu-image">
+                            <span class="menu-emoji">🥒</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Gulai Daun Singkong</h3>
+                            <p>Daun singkong muda dimasak dengan santan kental dan bumbu tradisional</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 6.000</span>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20pesan%20Gulai%20Daun%20Singkong" class="btn-order" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 6 -->
+                    <div class="menu-card" data-category="sambal">
+                        <div class="menu-image">
+                            <span class="menu-emoji">🌶️</span>
+                            <span class="menu-badge">Pedas!</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Sambal Ijo</h3>
+                            <p>Sambal cabe hijau dengan bawang dan tomat, tingkat pedas bisa request</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 5.000</span>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20pesan%20Sambal%20Ijo" class="btn-order" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 7 -->
+                    <div class="menu-card" data-category="lauk">
+                        <div class="menu-image">
+                            <span class="menu-emoji">🥚</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Telur Balado</h3>
+                            <p>Telur rebus digoreng dan dibalut dengan sambal balado merah pedas</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 10.000</span>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20pesan%20Telur%20Balado" class="btn-order" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 8 -->
+                    <div class="menu-card" data-category="lauk">
+                        <div class="menu-image">
+                            <span class="menu-emoji">🍖</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Sate Padang</h3>
+                            <p>Sate daging sapi dengan kuah kacang kental khas Padang</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 25.000</span>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20pesan%20Sate%20Padang" class="btn-order" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-cta">
+                    <p>Tidak menemukan menu yang dicari? Hubungi kami langsung!</p>
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20menu" class="btn btn-primary" target="_blank">
+                        <span>💬</span> Chat WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="about-image-placeholder">
+                            <span>🍽️</span>
+                            <p>Suasana Warung</p>
+                        </div>
+                        <div class="about-badge">
+                            <span class="badge-number">15+</span>
+                            <span class="badge-text">Tahun</span>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <span class="section-subtitle">Tentang Kami</span>
+                        <h2>Cita Rasa <span class="accent">Minang Asli</span></h2>
+                        <p>Warung Padang Jaya berdiri sejak 2009, menyajikan masakan Padang autentik dengan resep warisan dari nenek moyang kami di Bukittinggi.</p>
+                        <p>Setiap hidangan dimasak dengan bahan-bahan segar pilihan dan bumbu rempah berkualitas untuk menghadirkan cita rasa Minangkabau yang sesungguhnya.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature">
+                                <span class="feature-icon">🌿</span>
+                                <div>
+                                    <h4>Bahan Segar</h4>
+                                    <p>Dimasak setiap hari dengan bahan berkualitas</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">👨‍🍳</span>
+                                <div>
+                                    <h4>Juru Masak Berpengalaman</h4>
+                                    <p>Chef asli Minang dengan pengalaman puluhan tahun</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">🏠</span>
+                                <div>
+                                    <h4>Tempat Nyaman</h4>
+                                    <p>Suasana bersih dan nyaman untuk keluarga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section" id="location">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Lokasi Kami</span>
+                    <h2>Kunjungi <span class="accent">Warung Kami</span></h2>
+                </div>
+
+                <div class="location-grid">
+                    <div class="location-info">
+                        <div class="info-card">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <h4>Alamat</h4>
+                                <p>Jl. Sudirman No. 123, Padang<br>Sumatra Barat, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">🕐</span>
+                            <div>
+                                <h4>Jam Buka</h4>
+                                <p>Senin - Minggu<br>07:00 - 21:00 WIB</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">📞</span>
+                            <div>
+                                <h4>Kontak</h4>
+                                <p>+62 812-3456-7890<br>warungpadangjaya@gmail.com</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20reservasi%20meja" class="btn btn-primary btn-full" target="_blank">
+                            <span>📅</span> Reservasi Meja
+                        </a>
+                    </div>
+                    <div class="location-map">
+                        <div class="map-placeholder">
+                            <span>🗺️</span>
+                            <p>Jl. Sudirman No. 123, Padang</p>
+                            <small>Klik untuk buka di Google Maps</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Lapar? Pesan Sekarang!</h2>
+                <p>Pesan via WhatsApp untuk makan di tempat, take away, atau delivery</p>
+                <a href="https://wa.me/6281234567890?text=Halo%20Warung%20Padang%20Jaya,%20saya%20ingin%20pesan%20makanan." class="btn btn-white btn-lg" target="_blank">
+                    <span>💬</span> Pesan via WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🍛</span>
+                        <span>Warung Padang<span class="accent">Jaya</span></span>
+                    </a>
+                    <p>Menyajikan masakan Padang autentik dengan cita rasa tradisional sejak 2009.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu Populer</h4>
+                    <ul>
+                        <li><a href="#menu">Rendang Daging</a></li>
+                        <li><a href="#menu">Gulai Ikan</a></li>
+                        <li><a href="#menu">Ayam Pop</a></li>
+                        <li><a href="#menu">Sate Padang</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informasi</h4>
+                    <ul>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#location">Lokasi</a></li>
+                        <li><a href="#menu">Menu Lengkap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <p>📍 Jl. Sudirman No. 123, Padang</p>
+                    <p>📞 +62 812-3456-7890</p>
+                    <p>🕐 07:00 - 21:00 WIB</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Warung Padang Jaya. All rights reserved.</p>
+                <p>Website by <a href="../../" target="_blank">WebPro Studio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Warung%20Padang%20Jaya!" class="whatsapp-float" target="_blank">
+        <span>💬</span>
+        <span class="float-text">Pesan</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

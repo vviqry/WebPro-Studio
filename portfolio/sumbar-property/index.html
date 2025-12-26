@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumbar Property | Properti Terbaik di Sumatra Barat</title>
+    <meta name="description" content="Sumbar Property - Agen properti terpercaya di Sumatra Barat. Jual beli rumah, tanah, ruko, dan apartemen dengan harga terbaik.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Sumbar<span class="accent">Property</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#listings">Properti</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <a href="https://wa.me/6281234567890?text=Halo%20Sumbar%20Property,%20saya%20tertarik%20dengan%20properti." class="btn btn-primary" target="_blank">
+                Hubungi Kami
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <span class="hero-badge">🏆 Agen Properti No.1 di Sumbar</span>
+                <h1>Temukan Properti <span class="accent">Impian</span> Anda</h1>
+                <p>Kami bantu Anda menemukan rumah, tanah, atau investasi properti terbaik di Sumatra Barat dengan harga kompetitif.</p>
+                
+                <!-- Search Box -->
+                <div class="search-box">
+                    <div class="search-tabs">
+                        <button class="search-tab active" data-type="all">Semua</button>
+                        <button class="search-tab" data-type="rumah">Rumah</button>
+                        <button class="search-tab" data-type="tanah">Tanah</button>
+                        <button class="search-tab" data-type="ruko">Ruko</button>
+                    </div>
+                    <div class="search-form">
+                        <div class="search-field">
+                            <label>Lokasi</label>
+                            <select id="location">
+                                <option value="">Semua Lokasi</option>
+                                <option value="padang">Padang</option>
+                                <option value="bukittinggi">Bukittinggi</option>
+                                <option value="payakumbuh">Payakumbuh</option>
+                                <option value="solok">Solok</option>
+                            </select>
+                        </div>
+                        <div class="search-field">
+                            <label>Harga Maks</label>
+                            <select id="price">
+                                <option value="">Semua Harga</option>
+                                <option value="500">< 500 Juta</option>
+                                <option value="1000">500 Juta - 1 M</option>
+                                <option value="2000">1 M - 2 M</option>
+                                <option value="more">> 2 M</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary search-btn" id="searchBtn">
+                            <span>🔍</span> Cari Properti
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Properti Tersedia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Transaksi Sukses</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Tahun Pengalaman</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Listings Section -->
+        <section class="listings-section" id="listings">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Properti Pilihan</span>
+                    <h2>Listing <span class="accent">Terbaru</span></h2>
+                    <p>Koleksi properti terbaik yang sedang dijual di Sumatra Barat</p>
+                </div>
+
+                <div class="listings-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="rumah">Rumah</button>
+                    <button class="filter-btn" data-filter="tanah">Tanah</button>
+                    <button class="filter-btn" data-filter="ruko">Ruko</button>
+                </div>
+
+                <div class="listings-grid">
+                    <!-- Property 1 -->
+                    <article class="property-card" data-type="rumah" data-location="padang">
+                        <div class="property-image">
+                            <span class="property-emoji">🏡</span>
+                            <span class="property-tag">Dijual</span>
+                            <span class="property-type">Rumah</span>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-price">
+                                <span class="price">Rp 850 Juta</span>
+                                <span class="nego">Nego</span>
+                            </div>
+                            <h3>Rumah Mewah 2 Lantai di Padang</h3>
+                            <p class="property-location">📍 Kuranji, Padang</p>
+                            <div class="property-specs">
+                                <span>🛏️ 4 KT</span>
+                                <span>🚿 3 KM</span>
+                                <span>📐 180 m²</span>
+                                <span>🏞️ 250 m²</span>
+                            </div>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Rumah%20Mewah%202%20Lantai%20di%20Padang" class="btn btn-primary btn-full" target="_blank">
+                                Hubungi Agen
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Property 2 -->
+                    <article class="property-card" data-type="tanah" data-location="bukittinggi">
+                        <div class="property-image">
+                            <span class="property-emoji">🏞️</span>
+                            <span class="property-tag hot">Hot</span>
+                            <span class="property-type">Tanah</span>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-price">
+                                <span class="price">Rp 1.2 M</span>
+                            </div>
+                            <h3>Tanah Strategis View Ngarai</h3>
+                            <p class="property-location">📍 Bukittinggi</p>
+                            <div class="property-specs">
+                                <span>📐 500 m²</span>
+                                <span>📜 SHM</span>
+                                <span>🛣️ Akses Mudah</span>
+                            </div>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Tanah%20View%20Ngarai%20Bukittinggi" class="btn btn-primary btn-full" target="_blank">
+                                Hubungi Agen
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Property 3 -->
+                    <article class="property-card" data-type="ruko" data-location="padang">
+                        <div class="property-image">
+                            <span class="property-emoji">🏪</span>
+                            <span class="property-tag">Dijual</span>
+                            <span class="property-type">Ruko</span>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-price">
+                                <span class="price">Rp 1.5 M</span>
+                                <span class="nego">Nego</span>
+                            </div>
+                            <h3>Ruko 3 Lantai Jl. Sudirman</h3>
+                            <p class="property-location">📍 Padang Barat, Padang</p>
+                            <div class="property-specs">
+                                <span>📐 90 m²</span>
+                                <span>🏗️ 3 Lantai</span>
+                                <span>📜 SHM</span>
+                            </div>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Ruko%203%20Lantai%20Jl.%20Sudirman" class="btn btn-primary btn-full" target="_blank">
+                                Hubungi Agen
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Property 4 -->
+                    <article class="property-card" data-type="rumah" data-location="payakumbuh">
+                        <div class="property-image">
+                            <span class="property-emoji">🏠</span>
+                            <span class="property-tag">Dijual</span>
+                            <span class="property-type">Rumah</span>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-price">
+                                <span class="price">Rp 450 Juta</span>
+                            </div>
+                            <h3>Rumah Minimalis Type 60</h3>
+                            <p class="property-location">📍 Payakumbuh</p>
+                            <div class="property-specs">
+                                <span>🛏️ 2 KT</span>
+                                <span>🚿 1 KM</span>
+                                <span>📐 60 m²</span>
+                                <span>🏞️ 100 m²</span>
+                            </div>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Rumah%20Minimalis%20Payakumbuh" class="btn btn-primary btn-full" target="_blank">
+                                Hubungi Agen
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Property 5 -->
+                    <article class="property-card" data-type="rumah" data-location="padang">
+                        <div class="property-image">
+                            <span class="property-emoji">🏘️</span>
+                            <span class="property-tag hot">Hot</span>
+                            <span class="property-type">Rumah</span>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-price">
+                                <span class="price">Rp 2.3 M</span>
+                            </div>
+                            <h3>Rumah Villa dengan Kolam Renang</h3>
+                            <p class="property-location">📍 Lubuk Minturun, Padang</p>
+                            <div class="property-specs">
+                                <span>🛏️ 5 KT</span>
+                                <span>🚿 4 KM</span>
+                                <span>📐 350 m²</span>
+                                <span>🏊 Pool</span>
+                            </div>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Villa%20dengan%20Kolam%20Renang" class="btn btn-primary btn-full" target="_blank">
+                                Hubungi Agen
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Property 6 -->
+                    <article class="property-card" data-type="tanah" data-location="solok">
+                        <div class="property-image">
+                            <span class="property-emoji">🌾</span>
+                            <span class="property-tag">Dijual</span>
+                            <span class="property-type">Tanah</span>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-price">
+                                <span class="price">Rp 300 Juta</span>
+                                <span class="nego">Nego</span>
+                            </div>
+                            <h3>Tanah Pertanian 1 Hektar</h3>
+                            <p class="property-location">📍 Solok</p>
+                            <div class="property-specs">
+                                <span>📐 10.000 m²</span>
+                                <span>📜 SHM</span>
+                                <span>💧 Irigasi</span>
+                            </div>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Tanah%20Pertanian%20Solok" class="btn btn-primary btn-full" target="_blank">
+                                Hubungi Agen
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="listings-cta">
+                    <p>Tidak menemukan properti yang cocok?</p>
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mencari%20properti%20dengan%20kriteria%20khusus" class="btn btn-outline" target="_blank">
+                        Konsultasi Gratis →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Layanan Kami</span>
+                    <h2>Solusi Properti <span class="accent">Lengkap</span></h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <span class="service-icon">🏠</span>
+                        <h3>Jual Properti</h3>
+                        <p>Bantu jual properti Anda dengan harga terbaik dan proses cepat</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">🔍</span>
+                        <h3>Cari Properti</h3>
+                        <p>Tim kami siap carikan properti sesuai kriteria Anda</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">📋</span>
+                        <h3>Konsultasi Legal</h3>
+                        <p>Bantuan legalitas, sertifikat, dan dokumen properti</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">💰</span>
+                        <h3>Pembiayaan KPR</h3>
+                        <p>Kerjasama dengan bank untuk kemudahan KPR</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <span class="section-subtitle">Tentang Kami</span>
+                        <h2>Agen Properti <span class="accent">Terpercaya</span></h2>
+                        <p>Sumbar Property adalah agen properti yang telah melayani masyarakat Sumatra Barat selama lebih dari 10 tahun. Kami berkomitmen memberikan layanan terbaik dalam jual beli properti.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature">
+                                <span>✅</span>
+                                <span>Properti Terverifikasi</span>
+                            </div>
+                            <div class="feature">
+                                <span>✅</span>
+                                <span>Harga Transparan</span>
+                            </div>
+                            <div class="feature">
+                                <span>✅</span>
+                                <span>Proses Aman & Legal</span>
+                            </div>
+                            <div class="feature">
+                                <span>✅</span>
+                                <span>Tim Profesional</span>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20konsultasi%20properti" class="btn btn-primary" target="_blank">
+                            Konsultasi Gratis
+                        </a>
+                    </div>
+                    <div class="about-image">
+                        <div class="about-placeholder">
+                            <span>🏢</span>
+                            <p>Tim Sumbar Property</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Kontak</span>
+                    <h2>Hubungi <span class="accent">Kami</span></h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <span class="contact-icon">📍</span>
+                        <h4>Kantor</h4>
+                        <p>Jl. Khatib Sulaiman No. 45<br>Padang, Sumatra Barat</p>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">📱</span>
+                        <h4>WhatsApp</h4>
+                        <p>+62 812-3456-7890</p>
+                        <a href="https://wa.me/6281234567890" target="_blank">Chat Sekarang →</a>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">📧</span>
+                        <h4>Email</h4>
+                        <p>info@sumbarproperty.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">🕐</span>
+                        <h4>Jam Kerja</h4>
+                        <p>Senin - Sabtu<br>09:00 - 18:00 WIB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Mau Jual atau Beli Properti?</h2>
+                <p>Konsultasikan kebutuhan properti Anda dengan tim profesional kami - GRATIS!</p>
+                <a href="https://wa.me/6281234567890?text=Halo%20Sumbar%20Property,%20saya%20ingin%20konsultasi." class="btn btn-white btn-lg" target="_blank">
+                    <span>💬</span> Chat via WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🏠</span>
+                        <span>Sumbar<span class="accent">Property</span></span>
+                    </a>
+                    <p>Agen properti terpercaya di Sumatra Barat sejak 2014.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Properti</h4>
+                    <ul>
+                        <li><a href="#listings">Rumah Dijual</a></li>
+                        <li><a href="#listings">Tanah Dijual</a></li>
+                        <li><a href="#listings">Ruko Dijual</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#services">Jual Properti</a></li>
+                        <li><a href="#services">Konsultasi Legal</a></li>
+                        <li><a href="#services">Pembiayaan KPR</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <p>📍 Jl. Khatib Sulaiman No. 45, Padang</p>
+                    <p>📱 +62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sumbar Property. All rights reserved.</p>
+                <p>Website by <a href="../../" target="_blank">WebPro Studio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Sumbar%20Property!" class="whatsapp-float" target="_blank">
+        <span>💬</span>
+        <span class="float-text">Chat</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
