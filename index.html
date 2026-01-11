@@ -47,6 +47,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('consent', 'default', {
+            'analytics_storage': 'granted'
+        });
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
     <!-- Styles -->
     <link rel="stylesheet" href="index.css">
 
@@ -260,91 +272,105 @@
             <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Layanan Kami</span>
-                    <h2 class="section__title">Solusi Website untuk <span class="gradient-text">Setiap Kebutuhan</span></h2>
+                    <h2 class="section__title">Harga Jasa <span class="gradient-text">Pembuatan Website</span></h2>
                     <p class="section__description">
-                        Kami menyediakan berbagai layanan pembuatan website yang disesuaikan dengan kebutuhan bisnis UMKM di Sumatra Barat
+                        Pilih paket yang sesuai dengan kebutuhan bisnis Anda. Semua paket sudah termasuk Free Domain & Hosting aktif 1 tahun!
                     </p>
                 </div>
 
-                <div class="services__grid services__grid--3">
-                    <!-- Service 1: Company Profile -->
-                    <article class="service-card">
-                        <div class="service-card__icon">
-                            <span>🏢</span>
+                <div class="pricing__grid">
+                    <!-- Tier 1: Pemula -->
+                    <article class="pricing-card pricing-card--pemula">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__name">Pemula</h3>
+                            <p class="pricing-card__tagline">cocok untuk Landing page sales</p>
                         </div>
-                        <div class="service-card__badge service-card__badge--promo">🔥 PROMO UMKM</div>
-                        <h3 class="service-card__title">Website Company Profile</h3>
-                        <p class="service-card__description">
-                            Website profil perusahaan profesional untuk meningkatkan kredibilitas dan kepercayaan pelanggan terhadap bisnis Anda.
-                        </p>
-                        <ul class="service-card__features">
-                            <li><span>✓</span> Desain Modern & Responsif</li>
-                            <li><span>✓</span> 5-7 Halaman</li>
-                            <li><span>✓</span> SEO On-Page</li>
-                            <li><span>✓</span> Form Kontak</li>
-                            <li><span>✓</span> Integrasi WhatsApp</li>
+                        <div class="pricing-card__price">
+                            <span class="price-original">Rp. 800.000</span>
+                            <span class="price-current">Rp.599rb</span>
+                        </div>
+                        <p class="pricing-card__renewal">Perpanjangan 500rb/ tahun</p>
+                        <ul class="pricing-card__features">
+                            <li>1 Halaman Website</li>
+                            <li>Free Domain + Hosting</li>
+                            <li>Aktif 1 Tahun</li>
+                            <li>Basic Landing Page Design</li>
+                            <li>Desain Template</li>
                         </ul>
-                        <div class="service-card__price">
-                            <span class="price-original">Rp 1.900.000</span>
-                            <span class="price-value price-value--promo">Rp 800.000</span>
-                            <span class="price-bonus">🎁 Free Domain & Hosting 1 Tahun</span>
-                        </div>
-                        <a href="https://wa.me/6285169175438?text=Halo%20WebPro%20Studio,%20saya%20tertarik%20dengan%20PROMO%20Website%20Company%20Profile%20Rp%20800rb." class="btn btn--primary btn--full" target="_blank" rel="noopener">
-                            Pesan Sekarang
+                        <a href="https://wa.me/6285169175438?text=Halo%20WebPro%20Studio,%20saya%20tertarik%20dengan%20paket%20PEMULA%20Rp%20599rb." class="pricing-card__btn" target="_blank" rel="noopener">
+                            <span>📱</span> ORDER SEKARANG
                         </a>
                     </article>
 
-                    <!-- Service 2: Toko Online -->
-                    <article class="service-card service-card--featured">
-                        <div class="service-card__icon">
-                            <span>🛒</span>
+                    <!-- Tier 2: Basic -->
+                    <article class="pricing-card pricing-card--basic">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__name">Basic</h3>
+                            <p class="pricing-card__tagline">cocok untuk web company profile</p>
                         </div>
-                        <div class="service-card__badge service-card__badge--promo">🔥 PROMO UMKM</div>
-                        <h3 class="service-card__title">Website Toko Online</h3>
-                        <p class="service-card__description">
-                            E-commerce lengkap dengan sistem pembayaran, keranjang belanja, dan manajemen produk untuk menjual produk Anda secara online.
-                        </p>
-                        <ul class="service-card__features">
-                            <li><span>✓</span> Keranjang Belanja</li>
-                            <li><span>✓</span> Integrasi Pembayaran</li>
-                            <li><span>✓</span> Manajemen Produk</li>
-                            <li><span>✓</span> Tracking Pesanan</li>
-                            <li><span>✓</span> Dashboard Admin</li>
+                        <div class="pricing-card__price">
+                            <span class="price-original">Rp. 1.300.000</span>
+                            <span class="price-current">Rp.990rb</span>
+                        </div>
+                        <p class="pricing-card__renewal">Perpanjangan 600rb/ tahun</p>
+                        <ul class="pricing-card__features">
+                            <li>3 Halaman Website</li>
+                            <li>Free Domain + Hosting</li>
+                            <li>Aktif 1 Tahun</li>
+                            <li>Basic Web Desain</li>
+                            <li>Desain Custom</li>
                         </ul>
-                        <div class="service-card__price">
-                            <span class="price-original">Rp 3.500.000</span>
-                            <span class="price-value price-value--promo">Rp 1.500.000</span>
-                            <span class="price-bonus">🎁 Free Domain & Hosting 1 Tahun</span>
-                        </div>
-                        <a href="https://wa.me/6285169175438?text=Halo%20WebPro%20Studio,%20saya%20tertarik%20dengan%20PROMO%20Website%20Toko%20Online%20Rp%201.5jt." class="btn btn--primary btn--full" target="_blank" rel="noopener">
-                            Pesan Sekarang
+                        <a href="https://wa.me/6285169175438?text=Halo%20WebPro%20Studio,%20saya%20tertarik%20dengan%20paket%20BASIC%20Rp%20990rb." class="pricing-card__btn" target="_blank" rel="noopener">
+                            <span>📱</span> ORDER SEKARANG
                         </a>
                     </article>
 
-                    <!-- Service 3: Redesign -->
-                    <article class="service-card">
-                        <div class="service-card__icon">
-                            <span>🎨</span>
+                    <!-- Tier 3: Profesional -->
+                    <article class="pricing-card pricing-card--profesional">
+                        <div class="pricing-card__popular">TERLARIS</div>
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__name">Profesional</h3>
+                            <p class="pricing-card__tagline">cocok untuk web company profile ataupun usaha</p>
                         </div>
-                        <div class="service-card__badge service-card__badge--promo">🔥 PROMO UMKM</div>
-                        <h3 class="service-card__title">Redesign Website</h3>
-                        <p class="service-card__description">
-                            Perbarui tampilan website lama Anda agar lebih modern, responsif, dan sesuai dengan tren desain terkini.
-                        </p>
-                        <ul class="service-card__features">
-                            <li><span>✓</span> Analisis Website Lama</li>
-                            <li><span>✓</span> Desain UI/UX Baru</li>
-                            <li><span>✓</span> Migrasi Konten</li>
-                            <li><span>✓</span> Optimasi Kecepatan</li>
-                            <li><span>✓</span> Mobile Responsive</li>
+                        <div class="pricing-card__price">
+                            <span class="price-original">Rp. 2.700.000</span>
+                            <span class="price-current">Rp.1,7jt</span>
+                        </div>
+                        <p class="pricing-card__renewal">Perpanjangan 800rb/ tahun</p>
+                        <ul class="pricing-card__features">
+                            <li>5 Halaman Website</li>
+                            <li>1 Halaman Dinamis</li>
+                            <li>Free Domain + Hosting</li>
+                            <li>Aktif 1 Tahun</li>
+                            <li>Basic Web Desain</li>
+                            <li>Desain Custom</li>
                         </ul>
-                        <div class="service-card__price">
-                            <span class="price-original">Rp 1.500.000</span>
-                            <span class="price-value price-value--promo">Rp 600.000</span>
-                            <span class="price-bonus">🎁 Free Domain & Hosting 1 Tahun</span>
+                        <a href="https://wa.me/6285169175438?text=Halo%20WebPro%20Studio,%20saya%20tertarik%20dengan%20paket%20PROFESIONAL%20Rp%201,7jt." class="pricing-card__btn pricing-card__btn--highlight" target="_blank" rel="noopener">
+                            <span>📱</span> ORDER SEKARANG
+                        </a>
+                    </article>
+
+                    <!-- Tier 4: Premium -->
+                    <article class="pricing-card pricing-card--premium">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__name">Premium</h3>
+                            <p class="pricing-card__tagline">cocok untuk web toko online, travel, yayasan, portal berita,dll</p>
                         </div>
-                        <a href="https://wa.me/6285169175438?text=Halo%20WebPro%20Studio,%20saya%20tertarik%20dengan%20PROMO%20Redesign%20Website%20Rp%20600rb." class="btn btn--primary btn--full" target="_blank" rel="noopener">
-                            Pesan Sekarang
+                        <div class="pricing-card__price">
+                            <span class="price-original">Rp. 5.000.000</span>
+                            <span class="price-current">Rp.3,9jt</span>
+                        </div>
+                        <p class="pricing-card__renewal">Perpanjangan 900rb/ tahun</p>
+                        <ul class="pricing-card__features">
+                            <li>5 Halaman Website</li>
+                            <li>3 Halaman Dinamis</li>
+                            <li>Free Domain + Hosting</li>
+                            <li>Aktif 1 Tahun</li>
+                            <li>Basic Web Desain</li>
+                            <li>Desain Custom</li>
+                        </ul>
+                        <a href="https://wa.me/6285169175438?text=Halo%20WebPro%20Studio,%20saya%20tertarik%20dengan%20paket%20PREMIUM%20Rp%203,9jt." class="pricing-card__btn" target="_blank" rel="noopener">
+                            <span>📱</span> ORDER SEKARANG
                         </a>
                     </article>
                 </div>

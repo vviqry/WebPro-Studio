@@ -1,0 +1,9 @@
+# WebPro Studio - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://webpro-studio.netlify.app/sitemap.xml
+
+# Crawl-delay (optional - helps prevent server overload)
+Crawl-delay: 1

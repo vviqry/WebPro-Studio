@@ -865,6 +865,196 @@ ul {
     color: var(--accent-light);
 }
 
+/* ================================
+   PRICING CARDS - New 4-Tier Design
+   ================================ */
+.pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+    align-items: stretch;
+}
+
+.pricing-card {
+    position: relative;
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--light);
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.pricing-card__popular {
+    position: absolute;
+    top: 12px;
+    right: -35px;
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    color: var(--white);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    padding: 6px 40px;
+    transform: rotate(45deg);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 10;
+}
+
+.pricing-card__header {
+    padding: var(--space-6) var(--space-5);
+    text-align: center;
+    border-radius: var(--radius-xl) var(--radius-xl) 50% 50% / var(--radius-xl) var(--radius-xl) 30px 30px;
+    margin: -2px -2px 0 -2px;
+}
+
+/* Tier 1: Pemula - Teal/Cyan gradient */
+.pricing-card--pemula .pricing-card__header {
+    background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
+}
+
+/* Tier 2: Basic - Blue gradient */
+.pricing-card--basic .pricing-card__header {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+}
+
+/* Tier 3: Profesional - Green gradient */
+.pricing-card--profesional .pricing-card__header {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.pricing-card--profesional {
+    border-color: #10B981;
+    box-shadow: 0 10px 40px rgba(16, 185, 129, 0.2);
+}
+
+/* Tier 4: Premium - Purple gradient */
+.pricing-card--premium .pricing-card__header {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+}
+
+.pricing-card__name {
+    color: var(--white);
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    margin-bottom: var(--space-1);
+    font-style: italic;
+}
+
+.pricing-card__tagline {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: var(--font-size-xs);
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.pricing-card__price {
+    padding: var(--space-6) var(--space-5) var(--space-2);
+    text-align: center;
+}
+
+.pricing-card__price .price-original {
+    display: block;
+    color: #DC2626;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    text-decoration: line-through;
+    margin-bottom: var(--space-1);
+}
+
+.pricing-card__price .price-current {
+    display: block;
+    color: #10B981;
+    font-size: var(--font-size-3xl);
+    font-weight: 800;
+    font-style: italic;
+}
+
+.pricing-card__renewal {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+    padding: 0 var(--space-5) var(--space-4);
+    border-bottom: 1px solid var(--light);
+    margin-bottom: var(--space-4);
+}
+
+.pricing-card__features {
+    padding: 0 var(--space-5);
+    margin-bottom: var(--space-6);
+    flex-grow: 1;
+}
+
+.pricing-card__features li {
+    padding: var(--space-2) 0;
+    font-size: var(--font-size-sm);
+    color: var(--dark-3);
+    text-align: center;
+    border-bottom: 1px dashed var(--light);
+}
+
+.pricing-card__features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    margin: 0 var(--space-4) var(--space-5);
+    padding: var(--space-3) var(--space-4);
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    color: var(--white);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-base);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pricing-card__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
+}
+
+.pricing-card__btn--highlight {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.pricing-card__btn--highlight:hover {
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+}
+
+/* Pricing Cards Responsive */
+@media (max-width: 1200px) {
+    .pricing__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+}
+
+@media (max-width: 700px) {
+    .pricing__grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .pricing-card__popular {
+        right: -30px;
+        font-size: 10px;
+        padding: 5px 35px;
+    }
+}
+
 /* Services Responsive - Update for 3 columns */
 @media (max-width: 1100px) {
     .services__grid--3 {
@@ -892,6 +1082,7 @@ ul {
         padding: var(--space-6);
     }
 }
+
 
 /* ================================
    PORTFOLIO SECTION
